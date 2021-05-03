@@ -44,4 +44,9 @@ $
 
 ## EventID enrichement
 Go to Investigation / Query Builder and start an XQL Search query. Simply query the dataset you just created and type "eventid" in the search fields. Windows EventID will be available in the **Event_System_EventID** while the enriched full text name will be available in **Event_System_EventID_Name**. In addition, **Event_System_EventID_Type** represents the EventID type like Policy Change, Process Tracking...
-Using Event_System_EventID_Type is an easy to start looking for anomalies.
+
+Use Event_System_EventID_Type in your XQL queries to start looking for anomalies. For example:
+```
+dataset = microsoft_windows_machine_raw 
+| filter (Event_System_EventID_Type = "Policy Change") 
+```
