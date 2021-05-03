@@ -13,11 +13,11 @@
 # Use uncompressed / JSON as Log Format  
 # Do NOT use your generic Cortex API key, this is a different one!
 #
-# BREtest token
-api_key = "Mzc6aExNNVlWYnZhR0d0d0Y1MU1RVnQ4dHNhQ3Q3b1V2elY5NmNmZm5WcHl0dWFIbWl3dW5tOGp3ekRualU2Sm9GVmdMb0tDQ3VRZ0ZYMU1JTVBtYlV4M1ZPS1VGNGVrSnk2YlhMbmtqdlhYcnNhR1N2STNZbVhCUm5EcU1vRmNidWw="
-# custom collector API url, it should be something like:
+# HTTP Custom Collector token key
+api_key = ""
+# HTTP Custom Collector url, click on "Copy api url" to get it and it should be something like:
 # api_url = "https://api-yourinstance.xdr.eu.paloaltonetworks.com/logs/v1/event"
-api_url = "https://api-brelab.xdr.eu.paloaltonetworks.com/logs/v1/event"
+api_url = ""
 #
 # Number of events you'd like to import per API call
 # If you receive of 413 error message in the import process decrease this number
@@ -1758,7 +1758,7 @@ def apiquery(api_post, api_events, global_payload, total_events, nbr_lines):
 print("---------------------------------------------")
 
 if api_key == "" or api_url == "":
-	print("ERROR - Please specify directly in the script your HTTP log collector url and api key.")
+	print("ERROR - Please specify directly in the script your HTTP log collector url and token key.")
 	exit(-1)
 
 if len(sys.argv) == 2:
