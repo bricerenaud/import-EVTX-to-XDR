@@ -20,7 +20,7 @@ INFO - DEBUG mode ON
 INFO - 421 entries in the eventID mapping table
 INFO - EVTX file tests/security-win10-May4th.evtx analysis in progress
 INFO - 25268 events included in this EVTX file
-INFO - Import started at 2021-05-03 19:43:31 with 2000 events per API call
+INFO - Import started at 2021-05-04 09:43:31 with 2000 events per API call
 
 INFO - API POST #1 including 2000 events / payload size: 3254.4 KB / 2000 events uploaded out of 25268 - 7.92% / return code:  <Response [200]> / return output: {"error":"false"}
 INFO - API POST #2 including 2000 events / payload size: 3245.7 KB / 4000 events uploaded out of 25268 - 15.83% / return code:  <Response [200]> / return output: {"error":"false"}
@@ -36,7 +36,7 @@ INFO - API POST #11 including 2000 events / payload size: 3314.8 KB / 22000 even
 INFO - API POST #12 including 2000 events / payload size: 3229.9 KB / 24000 events uploaded out of 25268 - 94.98% / return code:  <Response [200]> / return output: {"error":"false"}
 INFO - API POST #13 including 1268 events / payload size: 2048.1 KB / 25268 events uploaded out of 25268 - 100.00% / return code:  <Response [200]> / return output: {"error":"false"}
 
-INFO - Import finished at 2021-05-03 19:43:57
+INFO - Import finished at 2021-05-04 09:43:57
 INFO - EVTX import in XDR performed with success: 25268 events imported in 0:00:25.894686 (hh:mm:ss) at 1010.72 events/second.
 ---------------------------------------------
 $ 
