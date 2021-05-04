@@ -11,14 +11,14 @@ $ python3 ./import_evtx_file_to_XDR_0.8.py <your_file>.evtx
 ```
 The output should look like this:
 ```
-$ python3 ./import_evtx_file_to_XDR_0.8.py tests/security-win10-May3rd.evtx 
+$ python3 ./import_evtx_file_to_XDR_0.8.py tests/security-win10-May4th.evtx 
 ---------------------------------------------
 - CORTEX XDR EVTX file importer script v0.8 -
 ---------------------------------------------
 
 INFO - DEBUG mode ON
 INFO - 421 entries in the eventID mapping table
-INFO - EVTX file tests/security-win10-May3rd.evtx analysis in progress
+INFO - EVTX file tests/security-win10-May4th.evtx analysis in progress
 INFO - 25268 events included in this EVTX file
 INFO - Import started at 2021-05-03 19:43:31 with 2000 events per API call
 
