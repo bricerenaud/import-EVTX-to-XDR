@@ -5,7 +5,10 @@ This file is a short python script to convert, enrich and upload an EVTX file to
 1. Connect to your Cortex XDR console in Settings to create a new HTTP Custom Collector. Please select **uncompressed** and **JSON** Log Format.
 2. Copy/Paste the displayed token key to the the **api_key** variable of the script.
 3. Copy/Paste the API URL displayed by clicking on "copy api url" to the **api_url** variable of the script.
-4. Finally, you could simply run the script:
+
+![HTTP Custom Collector](https://raw.githubusercontent.com/zoinx/import-EVTX-to-XDR/main/screenshots/http_custom_collector_config.png)
+
+5. Finally, you could simply run the script:
 ```
 $ python3 ./import_evtx_file_to_XDR_0.8.py <your_file>.evtx 
 ```
@@ -43,9 +46,10 @@ $
 ```
 
 ## EventID enrichment
-Go to Investigation / Query Builder and start an XQL Search query. Simply query the dataset you just created and type "eventid" in the search fields. Windows EventID will be available in the **Event_System_EventID** while the enriched full text name will be available in **Event_System_EventID_Name**. In addition, **Event_System_EventID_Type** represents the EventID type like Policy Change, Process Tracking...
+Go to Investigation / Query Builder and start an XQL Search query. Simply query the dataset you just created and type "eventid" in the search fields. Windows EventID will be available in the **Event_System_EventID** while the enriched full text name will be available in **Event_System_EventID_Name**. 
+![EventID Name](https://raw.githubusercontent.com/zoinx/import-EVTX-to-XDR/main/screenshots/eventid_name.png)
 
-Use Event_System_EventID_Type in your XQL queries to start looking for anomalies. For example:
+In addition, **Event_System_EventID_Type** represents the EventID type like Policy Change, Process Tracking... Use Event_System_EventID_Type in your XQL queries to start looking for anomalies. For example:
 ```
 dataset = microsoft_windows_machine_raw 
 | filter (Event_System_EventID_Type = "Policy Change") 
@@ -61,6 +65,8 @@ EventID type could be:
 - Process Tracking
 - System
 - Uncategorized
+
+![EventID Type](https://raw.githubusercontent.com/zoinx/import-EVTX-to-XDR/main/screenshots/eventid_type.png)
 
 ## Credits
 - EVTX Parser: https://github.com/omerbenamram/evtx/
