@@ -8,7 +8,7 @@ This file is a short python script to convert, enrich and upload an EVTX file to
 
 ![HTTP Custom Collector](https://raw.githubusercontent.com/zoinx/import-EVTX-to-XDR/main/screenshots/http_custom_collector_config.png)
 
-5. Finally, you could simply run the script:
+4. Finally, you could simply run the script:
 ```
 $ python3 ./import_evtx_file_to_XDR_0.8.py <your_file>.evtx 
 ```
