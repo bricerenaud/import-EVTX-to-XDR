@@ -50,3 +50,14 @@ Use Event_System_EventID_Type in your XQL queries to start looking for anomalies
 dataset = microsoft_windows_machine_raw 
 | filter (Event_System_EventID_Type = "Policy Change") 
 ```
+EventID type could be:
+- Account Management
+- Directory Services
+- Logon Logoff
+- Non Audit
+- Object Access
+- Policy Change
+- Privilege Use
+- Process Tracking
+- System
+- Uncategorized
