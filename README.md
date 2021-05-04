@@ -61,3 +61,7 @@ EventID type could be:
 - Process Tracking
 - System
 - Uncategorized
+
+## Credits
+- EVTX Parser - https://github.com/omerbenamram/evtx/
+- Ultimate Windows Security for Windows Security Logs documentation - https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/
