@@ -3,11 +3,11 @@ This file is a short python script to convert, enrich and upload an EVTX file to
 
 ## Configuration is easy
 1. Connect to your Cortex XDR console in Settings to create a new HTTP Custom Collector. Please select **uncompressed** and **JSON** Log Format.
-2. Copy/Paste the displayed token key to the the **api_key** variable of the script.
-3. Copy/Paste the API URL displayed by clicking on "copy api url" to the **api_url** variable of the script.
 
 ![HTTP Custom Collector](https://raw.githubusercontent.com/zoinx/import-EVTX-to-XDR/main/screenshots/http_custom_collector_config.png)
 
+2. Copy/Paste the displayed token key to the the **api_key** variable of the script.
+3. Copy/Paste the API URL displayed by clicking on "copy api url" to the **api_url** variable of the script.
 4. Finally, you could simply run the script:
 ```
 $ python3 ./import_evtx_file_to_XDR_0.8.py <your_file>.evtx 
